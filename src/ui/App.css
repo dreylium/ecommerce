@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Poppins;
+  src: url('./assets/fonts/Poppins/Poppins-Regular.woff2');
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url('./assets/fonts/Poppins/Poppins-Medium.woff2');
+}
+@font-face {
+  font-family: PoppinsSemibold;
+  src: url('./assets/fonts/Poppins/Poppins-SemiBold.woff2');
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('./assets/fonts/Inter/Inter-Regular.woff2');
+}
+@font-face {
+  font-family: InterMedium;
+  src: url('./assets/fonts/Inter/Inter-Medium.woff2');
+}
+@font-face {
+  font-family: InterSemiBold;
+  src: url('./assets/fonts/Inter/Inter-SemiBold.woff2');
+}
+@font-face {
+  font-family: InterBold;
+  src: url('./assets/fonts/Inter/Inter-Bold.woff2');
+}
+
+.layout-p {
+  @apply px-4 sm:px-10 2xl:px-[135px];
+}
+
+html {
+  @apply h-full;
+}
+body {
+  @apply font-sans leading-none;
+}
+input {
+  @apply w-full;
+}
+input:focus {
+  @apply w-full outline-none;
+}
+/* Chrome, Safari, Edge, dan Opera */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
